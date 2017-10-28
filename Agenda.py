@@ -36,20 +36,24 @@ class Agenda:
 
 a = Agenda()
 
-n = input('Digite seu nome: ')
-a.add_nome(n)
+i=1
+while(i==1):
+  n = input('Digite seu nome: ')
+  a.add_nome(n)
 
-n = input('Digite seu endereco: ')
-a.add_end(n)
+  n = input('Digite seu endereco: ')
+  a.add_end(n)
 
-n = input('Telefone Comercial: ')
-a.add_tc(n)
+  n = input('Telefone Comercial: ')
+  a.add_tc(n)
 
-n = input('Telefone Residencial: ')
-a.add_tr(n)
+  n = input('Telefone Residencial: ')
+  a.add_tr(n)
 
-CelularCeluDigite seu telefone car
-n = incelt('
+  n = input('Digite o número do celular')
+  a.add_cel(n)
 
-n = input('Digite seu email: ')
-a.add_em(n)
+  n = input('Digite seu email: ')
+  a.add_em(n)
+  
+  i=int(input('Deseja adicionar algo mais? 1=SIM / 0=NÃO'))
