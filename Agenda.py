@@ -35,21 +35,26 @@ class Agenda:
     return self.endereco.pop(0)
 
 a = Agenda()
+print('         -Agenda Telefonica-')
+i=1
+while(i==1):
+  print('------------ NOVO CONTATO ------------\n')
+  n = input('Digite seu nome: ')
+  a.add_nome(n)
 
-n = input('Digite seu nome: ')
-a.add_nome(n)
+  n = input('Digite seu endereco: ')
+  a.add_end(n)
 
-n = input('Digite seu endereco: ')
-a.add_end(n)
+  n = input('Telefone Comercial: ')
+  a.add_tc(n)
 
-n = input('Telefone Comercial: ')
-a.add_tc(n)
+  n = input('Telefone Residencial: ')
+  a.add_tr(n)
 
-n = input('Telefone Residencial: ')
-a.add_tr(n)
+  n = input('Digite o numero do celular: ')
+  a.add_cel(n)
 
-CelularCeluDigite seu telefone car
-n = incelt('
-
-n = input('Digite seu email: ')
-a.add_em(n)
+  n = input('Digite seu email: ')
+  a.add_em(n)
+  
+  i=int(input('\nDeseja adicionar algo mais? (1=SIM) (0=NÃO) -> '))
