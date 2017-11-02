@@ -25,35 +25,48 @@ class Agenda:
 
   def add_em(self, n):
     self.email.append(n)
-
-  def remove(self):
-    return self.nome.pop(0)
-    return self.telcomercial.pop(0)
-    return self.telresidencial.pop(0)
-    return self.celular.pop(0)
-    return self.email.pop(0)
-    return self.endereco.pop(0)
+    
+  def remover(self,r):
+    self.nome.remove(r) 
 
 a = Agenda()
 
+
+def cadastra():           #Essa função é chamada para cadastrar uma nova pessoa
+  i=1
+  while(i==1):
+    n = input('Nome: ')
+    a.add_nome(n)
+
+    n = input('Endereco: ')
+    a.add_end(n)
+
+    n = input('Telefone Comercial: ')
+    a.add_tc(n)
+
+    n = input('Telefone Residencial: ')
+    a.add_tr(n)
+
+    n = input('Telefone Celular: ')
+    a.add_cel(n)
+
+    n = input('Email: ')
+    a.add_em(n)
+    print('***********Contato Cadastrado com sucesso!!!**********')
+    e=int(input('Deseja adicionar algo mais? 1=SIM / 0=NÃO: '))
+    if (type
+    
+
+    
 i=1
 while(i==1):
-  n = input('Digite seu nome: ')
-  a.add_nome(n)
-
-  n = input('Digite seu endereco: ')
-  a.add_end(n)
-
-  n = input('Telefone Comercial: ')
-  a.add_tc(n)
-
-  n = input('Telefone Residencial: ')
-  a.add_tr(n)
-
-  n = input('Digite o número do celular')
-  a.add_cel(n)
-
-  n = input('Digite seu email: ')
-  a.add_em(n)
-  
-  i=int(input('Deseja adicionar algo mais? 1=SIM / 0=NÃO'))
+  print('----------------------------------------------------------')
+  print('-------------------AGENDA PESSOAL-------------------------')
+  print('----------------------------------------------------------')
+  print('1-> Cadastrar   2-> Pesquisar')
+  op = int(input('Digite uma opção:'))
+  if (op==1):
+    cadastra()
+    
+#a.remover('Renan')
+print (a.nome)
