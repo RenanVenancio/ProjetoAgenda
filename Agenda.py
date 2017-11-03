@@ -88,9 +88,7 @@ def cadastra():           #Essa função é chamada para cadastrar uma nova pess
       e = input('Deseja cadastrar outra pessoa? 1=SIM / 0=NÃO: ')
       if (str.isnumeric(e)):  #VERIFICA SE FOI DIGITADO UM NUMERO
         e = int(e)            #CASO SEJA UM NUMERO CONVERTE PARA INTEIRO E SAI DO LOOP
-        if e!=0 or e!=1:
-          print('Opçao Invalida!')
-          e=str(e)
+        
     if type(e) == int:
       i=e                     #ATRIBUI A VARIAVEL TRATADA AO 'I' p/ SAIR DO LOOP
 
