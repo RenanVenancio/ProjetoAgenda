@@ -58,3 +58,5 @@ while(i==1):
   a.add_em(n)
   
   i=int(input('\nDeseja adicionar algo mais? (1=SIM) (0=NÃO) -> '))
+
+  #Desenvolvido por Matheus Fr & Renan Vn
